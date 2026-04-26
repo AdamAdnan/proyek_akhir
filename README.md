@@ -23,7 +23,7 @@ Berdasarkan cakupan proyek tersebut, diperlukan beberapa resource dan tools seba
 
 ### Persiapan
 
-Sumber data: ....
+Sumber data: [Students' performance](https://github.com/dicodingacademy/dicoding_dataset/tree/main/students_performance)
 #### Struktur Folder
 ```
 employee-attrition-analytics/
