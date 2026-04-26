@@ -24,7 +24,8 @@ Berdasarkan cakupan proyek tersebut, diperlukan beberapa resource dan tools seba
 ### Persiapan
 
 Sumber data: [Students' performance](https://github.com/dicodingacademy/dicoding_dataset/tree/main/students_performance)
-#### Struktur Folder
+
+**Struktur Folder**
 ```
 employee-attrition-analytics/
 │
@@ -39,14 +40,25 @@ employee-attrition-analytics/
 └── requirements.txt
 ```
 
-#### Setup environment - Anaconda
-```
-conda create --name employee-dashboard python=3.12
-conda activate employee-dashboard
-D: 
-cd employee-attrition-analytics
-pip install -r requirements.txt
-```
+**Setup environment - Anaconda**
+1. Buka terminal
+2. Jalankan perintah berikut untuk membuat environment.
+   ```
+   conda create --name employee-dashboard python=3.12
+   ```
+4. Aktifkan virtual environment.
+   ```
+   conda activate employee-dashboard
+   ```
+5. Pindah ke direktori project
+   ```
+   D:
+   cd employee-attrition-analytics
+   ```
+6. Instal semua library yang dibutuhkan menggunakan perintah berikut.
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Business Dashboard
 Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
