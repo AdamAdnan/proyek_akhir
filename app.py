@@ -36,16 +36,16 @@ scholarship = st.selectbox("Scholarship Holder", [0, 1])
 # INPUT ARRAY (WAJIB URUT SESUAI TRAINING)
 # =========================
 input_data = np.array([[
-    age,
-    admission_grade,
     prev_grade,
-    sem1_grade,
-    sem2_grade,
-    sem1_approved,
-    sem2_approved,
+    admission_grade,
     debtor,
     tuition,
-    scholarship
+    scholarship,
+    age,
+    sem1_approved,
+    sem1_grade,
+    sem2_approved,
+    sem2_grade,    
 ]])
 
 # =========================
