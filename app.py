@@ -12,8 +12,8 @@ import numpy as np
 import joblib
 
 # Load model
-model = joblib.load("model.pkl")
-scaler = joblib.load("scaler.pkl")
+model = joblib.load("model.joblib")
+scaler = joblib.load("scaler.joblib")
 
 st.set_page_config(page_title="Dropout Prediction", layout="centered")
 
