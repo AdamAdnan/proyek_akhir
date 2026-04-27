@@ -111,7 +111,7 @@ left_col, right_col = st.columns([2, 1])
 with left_col:
     st.subheader("📋 Input Data Mahasiswa")
 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([1,1])
 
     with col1:
         age = st.number_input("Age at Enrollment", 17, 60, 20)
