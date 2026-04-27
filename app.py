@@ -19,17 +19,17 @@ with left_col:
 
     with col1:
         age = st.number_input("Age at Enrollment", 17, 60, value=17)
-        admission_grade = st.number_input("Admission Grade", 0.0, 200.0, value=0.0)
-        sem1_grade = st.number_input("1st Sem Grade", 0.0, 20.0,  value=0.0)
-        sem2_grade = st.number_input("2nd Sem Grade", 0.0, 20.0,  value=0.0)
-        debtor = st.selectbox("Debtor", [0, 1])
+        admission_grade = st.number_input("Nilai Masuk", 0.0, 200.0, value=0.0)
+        sem1_grade = st.number_input("Nilai Semester 1", 0.0, 20.0,  value=0.0)
+        sem2_grade = st.number_input("Nilai Semester 2", 0.0, 20.0,  value=0.0)
+        debtor = st.selectbox("Status Hutang (Debitur)", [0, 1])
 
     with col2:
-        prev_grade = st.number_input("Previous Qualification Grade", 0.0, 200.0,  value=0.0)
-        sem1_approved = st.number_input("1st Sem Approved", 0, 20,  value=0)
-        sem2_approved = st.number_input("2nd Sem Approved", 0, 20,  value=0)
-        tuition = st.selectbox("Tuition Fees Up To Date", [0, 1])
-        scholarship = st.selectbox("Scholarship Holder", [0, 1])
+        prev_grade = st.number_input("Nilai Kualifikasi Sebelumnya", 0.0, 200.0,  value=0.0)
+        sem1_approved = st.number_input("Jumlah Mata Kuliah Lulus Semester 1", 0, 20,  value=0)
+        sem2_approved = st.number_input("Jumlah Mata Kuliah Lulus Semester 2", 0, 20,  value=0)
+        tuition = st.selectbox("Pembayaran UKT Lancar", [0, 1])
+        scholarship = st.selectbox("Penerima Beasiswa", [0, 1])
 
     input_data = np.array([[
     prev_grade,
