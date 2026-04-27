@@ -101,6 +101,7 @@ st.set_page_config(page_title="Dropout Prediction", layout="wide")
 # st.title("🎓 Student Dropout Prediction")
 st.markdown("<h1 style='text-align: center;'>🎓 Student Dropout Prediction</h1>", unsafe_allow_html=True)
 st.write("")
+st.subheader("Input Data")
 
 # =========================
 # MAIN LAYOUT (2 COLUMN)
