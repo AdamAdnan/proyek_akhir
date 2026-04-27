@@ -99,7 +99,7 @@ scaler = joblib.load("scaler.joblib")
 st.set_page_config(page_title="Dropout Prediction", layout="wide")
 
 st.markdown("<h1 style='text-align: center;'>🎓 Student Dropout Prediction</h1>", unsafe_allow_html=True)
-st.markdown("<br><br>", unsafe_allow_html=True)
+st.write("")
 
 # =========================
 # MAIN LAYOUT (2 COLUMN)
@@ -151,22 +151,7 @@ with left_col:
 # =========================
 # RIGHT COLUMN (RESULT)
 # =========================
-st.markdown(
-    """
-    <style>
-    .right-card {
-        background-color: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0px 2px 12px rgba(0,0,0,0.1);
-        height: 100%;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 with right_col:
-    st.markdown("<div class='right-card'>", unsafe_allow_html=True)
     st.subheader("📊 Hasil Prediksi")
 
     if predict_button:
