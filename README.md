@@ -63,6 +63,12 @@ employee-attrition-analytics/
 ## Business Dashboard
 Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
 
+#### Informasi Akses
+- **Metabase Version**: 0.59.5.1
+- **Database File**: `metabase.db.mv.db`
+- **Username**: admin123@gmail.com
+- **Password**: admin123
+
 ## Menjalankan Sistem Machine Learning
 Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
 
