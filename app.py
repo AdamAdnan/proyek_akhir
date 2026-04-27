@@ -18,7 +18,7 @@ with left_col:
     col1, col2 = st.columns([1,1])
 
     with col1:
-        age = st.number_input("Age at Enrollment", 17, 60, value=17)
+        age = st.number_input("Usia saat Masuk Kuliah", 17, 60, value=17)
         admission_grade = st.number_input("Nilai Masuk", 0.0, 200.0, value=0.0)
         sem1_grade = st.number_input("Nilai Semester 1", 0.0, 20.0,  value=0.0)
         sem2_grade = st.number_input("Nilai Semester 2", 0.0, 20.0,  value=0.0)
