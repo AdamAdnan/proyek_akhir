@@ -61,7 +61,8 @@ employee-attrition-analytics/
    ```
 
 ## Business Dashboard
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
+Dashboard **Dropout Risk Dashboard** dirancang untuk membantu institusi dalam memantau kondisi mahasiswa dan mengidentifikasi risiko dropout secara dini berbasis data. Dashboard ini menyajikan ringkasan utama seperti jumlah mahasiswa, tingkat dropout, dan kelulusan, serta distribusi tingkat risiko mahasiswa untuk mendukung deteksi awal. Analisis menunjukkan bahwa faktor akademik, seperti nilai dan jumlah unit yang diselesaikan, memiliki pengaruh paling besar terhadap risiko dropout, sementara faktor finansial seperti status pembayaran juga berkontribusi sebagai faktor pendukung. Selain itu, dashboard ini menyediakan rekomendasi tindakan yang dapat digunakan untuk menentukan intervensi yang tepat, sehingga membantu institusi dalam mengurangi tingkat dropout secara lebih efektif.
+
 
 #### Informasi Akses
 - **Metabase Version**: 0.59.5.1
