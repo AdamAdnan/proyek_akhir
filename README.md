@@ -68,7 +68,7 @@ Dashboard **Dropout Risk Dashboard** dirancang untuk membantu institusi dalam me
 - **Metabase Version**: 0.59.5.1
 - **Database File**: `metabase.db.mv.db`
 - **Username**: admin123@gmail.com
-- **Password**: admin123
+- **Password**: admin123@
 
 #### Cara Menjalankan
 1. Pastikan Docker sudah terinstall pada perangkat Anda.
@@ -82,9 +82,9 @@ Dashboard **Dropout Risk Dashboard** dirancang untuk membantu institusi dalam me
    ```
 5. Login menggunakan username dan password yang telah disediakan.
 6. Setelah berhasil masuk, pada halaman utama pilih menu **Our analytics**.
-7. Masuk ke dalam koleksi tersebut, lalu scroll ke bawah hingga menemukan dashboard bernama **HR Attrition Analytics Dashboard**.
+7. Masuk ke dalam koleksi tersebut, lalu scroll ke bawah hingga menemukan dashboard bernama **Dropout Risk Dashboard**.
 8. Klik pada dashboard tersebut.
-9. Setelah itu, dashboard akan terbuka dan menampilkan seluruh visualisasi analisis HR Attrition.
+9. Setelah itu, dashboard akan terbuka dan menampilkan seluruh visualisasi analisis Dropout Risk.
 
 ## Menjalankan Sistem Machine Learning
 **Demo Aplikasi**
