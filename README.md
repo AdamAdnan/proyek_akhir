@@ -99,6 +99,7 @@ Prototipe sistem machine learning dapat diakses melalui link berikut: [Student D
    ```
    streamlit run app.py
    ```
+   Biarkan kolom email kosong, lalu tekan Enter.
 5. Akses Aplikasi di Browser
    ```
    http://localhost:8501
