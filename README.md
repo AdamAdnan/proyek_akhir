@@ -27,15 +27,14 @@ Sumber data: [Students' performance](https://github.com/dicodingacademy/dicoding
 
 **Struktur Folder**
 ```
-employee-attrition-analytics/
+student-dropout-prediction/
 │
-├── model.pkl
-├── features.pkl
+├── model.joblib
+├── scaler.joblib
 ├── notebook.ipynb
-├── prediction.py
+├── app.py
 ├── README.md
 ├── insight_dt_dicoding-dashboard.jpg
-├── insight_dt_dicoding-video
 ├── metabase.db.mv.db
 └── requirements.txt
 ```
@@ -44,16 +43,16 @@ employee-attrition-analytics/
 1. Buka terminal
 2. Jalankan perintah berikut untuk membuat environment.
    ```
-   conda create --name employee-dashboard python=3.12
+   conda create --name dropout-env python=3.12
    ```
 4. Aktifkan virtual environment.
    ```
-   conda activate employee-dashboard
+   conda activate dropout-env
    ```
 5. Pindah ke direktori project
    ```
    D:
-   cd employee-attrition-analytics
+   cd student-dropout-prediction
    ```
 6. Instal semua library yang dibutuhkan menggunakan perintah berikut.
    ```
@@ -75,7 +74,7 @@ Dashboard **Dropout Risk Dashboard** dirancang untuk membantu institusi dalam me
 1. Pastikan Docker sudah terinstall pada perangkat Anda.
 2. Jalankan Metabase menggunakan perintah berikut:
    ```
-   docker run -d -p 3000:3000 -v D:\employee-attrition-analytics:/metabase.db --name metabase metabase/metabase
+   docker run -d -p 3000:3000 -v D:\student-dropout-prediction:/metabase.db --name metabase metabase/metabase
    ```
 4. Buka browser dan akses:
    ```
@@ -88,11 +87,32 @@ Dashboard **Dropout Risk Dashboard** dirancang untuk membantu institusi dalam me
 9. Setelah itu, dashboard akan terbuka dan menampilkan seluruh visualisasi analisis HR Attrition.
 
 ## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
+**Demo Aplikasi**
 
-```
+Prototipe sistem machine learning dapat diakses melalui link berikut: [Student Dropout Prediction App](https://student-dropout-prediction.streamlit.app)
 
-```
+**Cara Menjalankan Secara Lokal**
+1. Bukan terminal anaconda
+2. Kemudian setup environment anaconda 
+3. Masuk ke Folder Project
+4. Jalankan Aplikasi Streamlit
+   ```
+   streamlit run app.py
+   ```
+5. Akses Aplikasi di Browser
+   ```
+   http://localhost:8501
+   ```
+6. Cara Menggunakan Aplikasi
+   Setelah aplikasi terbuka:
+   - Masukkan data mahasiswa pada form input (kolom kiri)
+   - klik tombol “Predict”
+   - Hasil akan muncul di kolom kanan berupa:
+     - Status risiko dropout
+     - Probabilitas risiko
+     - Insight Sederhana
+     
+
 
 ## Conclusion
 Berdasarkan hasil analisis eksploratif data (EDA) dan evaluasi model machine learning, ditemukan bahwa **performa akademik mahasiswa merupakan faktor paling dominan dalam menentukan risiko dropout**, khususnya pada semester kedua yang ditunjukkan melalui nilai dan jumlah unit yang berhasil diselesaikan. Hal ini diperkuat oleh hasil feature importance dari model, di mana variabel seperti *curricular units semester 2 approved* dan *semester 2 grade* memiliki kontribusi paling besar dibandingkan fitur lainnya. Sementara itu, faktor finansial seperti status pembayaran biaya kuliah dan kondisi sebagai debtor juga terbukti berpengaruh, meskipun tidak sekuat faktor akademik. Sebaliknya, nilai saat masuk dan latar belakang akademik sebelumnya memiliki pengaruh yang relatif kecil terhadap kemungkinan dropout. Untuk mendukung pemantauan dan pengambilan keputusan, dashboard yang dikembangkan mampu menyajikan informasi secara terstruktur, mulai dari gambaran umum kondisi mahasiswa, distribusi risiko, hingga faktor-faktor utama yang memengaruhi dropout serta rekomendasi tindakan. Selain itu, prototype sistem machine learning berbasis Streamlit yang telah dibuat memungkinkan pengguna untuk melakukan prediksi risiko dropout secara langsung berdasarkan data mahasiswa, sehingga dapat digunakan sebagai alat bantu dalam proses deteksi dini. Dengan demikian, keseluruhan solusi yang dibangun tidak hanya memberikan insight, tetapi juga menyediakan sistem yang dapat digunakan untuk mendukung pengambilan keputusan yang lebih cepat dan tepat dalam upaya menurunkan tingkat dropout.
