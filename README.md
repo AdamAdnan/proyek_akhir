@@ -95,9 +95,11 @@ Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Se
 ```
 
 ## Conclusion
-Jelaskan konklusi dari proyek yang dikerjakan.
+Berdasarkan hasil analisis eksploratif data (EDA) dan evaluasi model machine learning, ditemukan bahwa **performa akademik mahasiswa merupakan faktor paling dominan dalam menentukan risiko dropout**, khususnya pada semester kedua yang ditunjukkan melalui nilai dan jumlah unit yang berhasil diselesaikan. Hal ini diperkuat oleh hasil feature importance dari model, di mana variabel seperti *curricular units semester 2 approved* dan *semester 2 grade* memiliki kontribusi paling besar dibandingkan fitur lainnya. Sementara itu, faktor finansial seperti status pembayaran biaya kuliah dan kondisi sebagai debtor juga terbukti berpengaruh, meskipun tidak sekuat faktor akademik. Sebaliknya, nilai saat masuk dan latar belakang akademik sebelumnya memiliki pengaruh yang relatif kecil terhadap kemungkinan dropout. Untuk mendukung pemantauan dan pengambilan keputusan, dashboard yang dikembangkan mampu menyajikan informasi secara terstruktur, mulai dari gambaran umum kondisi mahasiswa, distribusi risiko, hingga faktor-faktor utama yang memengaruhi dropout serta rekomendasi tindakan. Selain itu, prototype sistem machine learning berbasis Streamlit yang telah dibuat memungkinkan pengguna untuk melakukan prediksi risiko dropout secara langsung berdasarkan data mahasiswa, sehingga dapat digunakan sebagai alat bantu dalam proses deteksi dini. Dengan demikian, keseluruhan solusi yang dibangun tidak hanya memberikan insight, tetapi juga menyediakan sistem yang dapat digunakan untuk mendukung pengambilan keputusan yang lebih cepat dan tepat dalam upaya menurunkan tingkat dropout.
 
 ### Rekomendasi Action Items
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-- action item 1
-- action item 2
+Berikan beberapa rekomendasi action items yang harus dilakukan institut guna menyelesaikan permasalahan mereka.
+- Intervensi Akademik Dini
+  Institusi perlu melakukan pemantauan performa akademik mahasiswa sejak semester awal, khususnya pada nilai dan jumlah mata kuliah yang diselesaikan, untuk mengidentifikasi mahasiswa berisiko dan memberikan bimbingan akademik secara tepat waktu.
+- Dukungan Finansial Terarah
+  Institusi disarankan untuk memberikan perhatian khusus kepada mahasiswa dengan kendala pembayaran, seperti melalui skema bantuan finansial atau pengaturan ulang pembayaran, guna mengurangi risiko dropout yang disebabkan oleh faktor ekonomi.
