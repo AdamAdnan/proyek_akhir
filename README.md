@@ -63,12 +63,29 @@ employee-attrition-analytics/
 ## Business Dashboard
 Dashboard **Dropout Risk Dashboard** dirancang untuk membantu institusi dalam memantau kondisi mahasiswa dan mengidentifikasi risiko dropout secara dini berbasis data. Dashboard ini menyajikan ringkasan utama seperti jumlah mahasiswa, tingkat dropout, dan kelulusan, serta distribusi tingkat risiko mahasiswa untuk mendukung deteksi awal. Analisis menunjukkan bahwa faktor akademik, seperti nilai dan jumlah unit yang diselesaikan, memiliki pengaruh paling besar terhadap risiko dropout, sementara faktor finansial seperti status pembayaran juga berkontribusi sebagai faktor pendukung. Selain itu, dashboard ini menyediakan rekomendasi tindakan yang dapat digunakan untuk menentukan intervensi yang tepat, sehingga membantu institusi dalam mengurangi tingkat dropout secara lebih efektif.
 
+### Akses Dashboard Metabase
 
 #### Informasi Akses
 - **Metabase Version**: 0.59.5.1
 - **Database File**: `metabase.db.mv.db`
 - **Username**: admin123@gmail.com
 - **Password**: admin123
+
+#### Cara Menjalankan
+1. Pastikan Docker sudah terinstall pada perangkat Anda.
+2. Jalankan Metabase menggunakan perintah berikut:
+   ```
+   docker run -d -p 3000:3000 -v D:\employee-attrition-analytics:/metabase.db --name metabase metabase/metabase
+   ```
+4. Buka browser dan akses:
+   ```
+   http://localhost:3000
+   ```
+5. Login menggunakan username dan password yang telah disediakan.
+6. Setelah berhasil masuk, pada halaman utama pilih menu **Our analytics**.
+7. Masuk ke dalam koleksi tersebut, lalu scroll ke bawah hingga menemukan dashboard bernama **HR Attrition Analytics Dashboard**.
+8. Klik pada dashboard tersebut.
+9. Setelah itu, dashboard akan terbuka dan menampilkan seluruh visualisasi analisis HR Attrition.
 
 ## Menjalankan Sistem Machine Learning
 Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
