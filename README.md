@@ -89,7 +89,7 @@ Dashboard **Dropout Risk Dashboard** dirancang untuk membantu institusi dalam me
 ## Menjalankan Sistem Machine Learning
 **Demo Aplikasi**
 
-Prototipe sistem machine learning dapat diakses melalui link berikut: [Student Dropout Prediction App](https://student-dropout-prediction.streamlit.app)
+Prototipe sistem machine learning dapat diakses melalui link berikut: [Student Dropout Prediction App](https://proyekakhir-2v96c4nhiyspy6yesm6gmm.streamlit.app/)
 
 **Cara Menjalankan Secara Lokal**
 1. Bukan terminal anaconda
