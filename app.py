@@ -57,7 +57,7 @@ with right_col:
         dropout_index = list(classes).index('Dropout')
         proba = model.predict_proba(input_scaled)[0][dropout_index]
         
-        if prediction == 'Dropout:
+        if prediction == 'Dropout':
             st.error(f"⚠️ Risiko Dropout Tinggi\n\nProbabilitas: {proba:.2%}")
         else:
             st.success(f"✅ Tidak Berisiko Dropout\n\nProbabilitas: {proba:.2%}")
