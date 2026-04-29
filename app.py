@@ -56,7 +56,7 @@ with right_col:
         proba = model.predict_proba(input_scaled)[0][1]
         
         st.write(model.classes_)
-        if prediction == :
+        if prediction == 1:
             st.error(f"⚠️ Risiko Dropout Tinggi\n\nProbabilitas: {proba:.2%}")
         else:
             st.success(f"✅ Tidak Berisiko Dropout\n\nProbabilitas: {proba:.2%}")
