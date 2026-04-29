@@ -67,8 +67,8 @@ Dashboard **Dropout Risk Dashboard** dirancang untuk membantu institusi dalam me
 #### Informasi Akses
 - **Metabase Version**: 0.59.5.1
 - **Database File**: `metabase.db.mv.db`
-- **Username**: admin123@gmail.com
-- **Password**: admin123@
+- **Username**: insight.dt@gmail.com
+- **Password**: data404
 
 #### Cara Menjalankan
 1. Pastikan Docker sudah terinstall pada perangkat Anda.
