@@ -53,10 +53,11 @@ with right_col:
 
     if predict_button:
         prediction = model.predict(input_scaled)[0]
-        proba = model.predict_proba(input_scaled)[0][1]
+        classes = model.classes_
+        dropout_index = list(classes).index('Dropout')
+        proba = model.predict_proba(input_scaled)[0][dropout_index]
         
-        st.write(model.classes_)
-        if prediction == 1:
+        if prediction == 'Dropout:
             st.error(f"⚠️ Risiko Dropout Tinggi\n\nProbabilitas: {proba:.2%}")
         else:
             st.success(f"✅ Tidak Berisiko Dropout\n\nProbabilitas: {proba:.2%}")
